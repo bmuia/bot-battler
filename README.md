@@ -2,6 +2,12 @@
 
 **Bot Battlr** is a React web application where users can browse a collection of bots, enlist them into their army, and even discharge bots from service! It's a fun little game where you manage your own army of robots, view their stats, and delete them from your army if you no longer need them. Built with React and styled with Tailwind CSS, the app features a sleek dark theme for ultimate space vibes!
 
+## 📸 Preview
+
+<img src="./public/images/Screenshot from 2025-04-23 20-43-18.png" alt="Bot Battlr Screenshot 1" width="700"/>
+<br />
+<img src="./public/images/Screenshot from 2025-04-23 20-43-33.png" alt="Bot Battlr Screenshot 2" width="700"/>
+
 ## Features
 - **View Bot Collection**: See all available bots with their avatar, health, damage, armor, and bot class.
 - **Add Bots to Your Army**: Enlist bots into your army by clicking on them.
@@ -20,7 +26,7 @@ Follow these steps to run **Bot Battlr** locally:
 
 ### 1. Clone the Repository
 
-First, fork the repo then you to your local machine:
+First, fork the repo then clone to your local machine:
 
 ```bash
 git clone https://github.com/yourusername/bot-battlr.git
@@ -34,7 +40,7 @@ npm install tailwindcss @tailwindcss/vite
 ```
 
 ### 3. Setup the JSON Server
-In your project directory, create a file called db.json.
+In your project directory/ root directory, create a file called db.json.
 
 Use the example data below and paste it into the db.json file.
 ```json
@@ -73,7 +79,7 @@ json-server --watch db.json --port 8001
 npm run dev
 ```
 ### 6. View the App
-Open **http://localhost:3000** in your browser, and you should see the Bot Battlr app in action!
+Open **http://localhost:5173** in your browser, and you should see the Bot Battlr app in action!
 
 
 
