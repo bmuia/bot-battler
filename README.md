@@ -1,12 +1,79 @@
-# React + Vite
+# Bot Battlr
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Bot Battlr** is a React web application where users can browse a collection of bots, enlist them into their army, and even discharge bots from service! It's a fun little game where you manage your own army of robots, view their stats, and delete them from your army if you no longer need them. Built with React and styled with Tailwind CSS, the app features a sleek dark theme for ultimate space vibes!
 
-Currently, two official plugins are available:
+## Features
+- **View Bot Collection**: See all available bots with their avatar, health, damage, armor, and bot class.
+- **Add Bots to Your Army**: Enlist bots into your army by clicking on them.
+- **Remove Bots from Your Army**: Discharge bots by clicking on them in your army.
+- **Delete Bots Permanently**: Discharge a bot permanently, and it will be deleted from both the frontend and the backend.
+- **Dark Mode**: Sleek dark theme with a modern look.
+  
+## Setup & Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow these steps to run **Bot Battlr** locally:
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Node.js** installed (preferably the latest LTS version).
+- **json-server** installed for running the mock API.
+
+### 1. Clone the Repository
+
+First, fork the repo then you to your local machine:
+
+```bash
+git clone https://github.com/yourusername/bot-battlr.git
+cd bot-battlr
+```
+
+### 2. Install Dependencies
+```bash 
+npm install
+npm install tailwindcss @tailwindcss/vite
+```
+
+### 3. Setup the JSON Server
+In your project directory, create a file called db.json.
+
+Use the example data below and paste it into the db.json file.
+```json
+[
+  {
+    "id": 101,
+    "name": "wHz-93",
+    "health": 94,
+    "damage": 20,
+    "armor": 63,
+    "bot_class": "Support",
+    "catchphrase": "1010010101001101100011000111101",
+    "avatar_url": "https://robohash.org/nostrumrepellendustenetur.png?size=300x300&set=set1"
+  },
+  {
+    "id": 102,
+    "name": "RyM-66",
+    "health": 86,
+    "damage": 36,
+    "armor": 77,
+    "bot_class": "Medic",
+    "catchphrase": "0110011100000100011110100110011000011001",
+    "avatar_url": "https://robohash.org/quidemconsequaturaut.png?size=300x300&set=set1"
+  }
+]
+```
+
+### 4. Start the JSON Server
+Run this command to start the backend server:
+```bash
+json-server --watch db.json --port 8001
+```
+
+### 5. Run the React App
+```bash
+npm run dev
+```
+### 6. View the App
+Open **http://localhost:3000** in your browser, and you should see the Bot Battlr app in action!
+
+
+
