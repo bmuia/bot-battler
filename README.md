@@ -78,9 +78,11 @@ json-server --watch db.json --port 8001
 ```bash
 npm run dev
 ```
+
 ### 6. View the App
 Open **http://localhost:5173** in your browser, and you should see the Bot Battlr app in action!
 
+----------------------------------------------------------
 
 ## 🛠 Tech Stack
 React – Frontend framework
