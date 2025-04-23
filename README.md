@@ -82,4 +82,19 @@ npm run dev
 Open **http://localhost:5173** in your browser, and you should see the Bot Battlr app in action!
 
 
+## 🛠 Tech Stack
+React – Frontend framework
+
+Tailwind CSS – Utility-first CSS for styling
+
+JSON Server – Mock REST API for testing
+
+## 🚧 Future Ideas
+Sort bots by health, damage, armor
+
+Filter by bot class
+
+Drag-and-drop interface for army organization
+
+Bot duel feature
 
